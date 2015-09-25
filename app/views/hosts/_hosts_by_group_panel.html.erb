@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><%= group %></div>
+    <div class="panel-body">
+      <ul>
+        <% hosts.sort_by {|i, h| h }.each do |id, host| %>
+          <li>
+            <%= link_to host, host_path(id) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

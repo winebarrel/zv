@@ -1,0 +1,4 @@
+endpoint: http://localhost/zabbix/api_jsonrpc.php
+user: Admin
+password: zabbix
+url: http://localhost/zabbix

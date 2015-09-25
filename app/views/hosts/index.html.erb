@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Host group</h2>
+    </div>
+  </div>
+  <% @hosts_by_hostgroup.each_slice(3) do |arr| %>
+    <div class="row">
+      <% arr.each do |template, hosts| %>
+        <%= render partial: 'hosts_by_group_panel', locals: {group: template, hosts: hosts} %>
+      <% end %>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Template</h2>
+    </div>
+  </div>
+  <% @hosts_by_template.each_slice(3) do |arr| %>
+    <div class="row">
+      <% arr.each do |template, hosts| %>
+        <%= render partial: 'hosts_by_group_panel', locals: {group: template, hosts: hosts} %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

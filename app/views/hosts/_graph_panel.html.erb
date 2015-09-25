@@ -1,0 +1,10 @@
+<div class="col-md-6">
+  <div class="panel panel-default">
+    <div class="panel-heading"><%= graph[:name] %></div>
+    <div class="panel-body">
+      <%= link_to ZabbixUtils.graph_url(graphid) do %>
+        <img src="<%= raw ZabbixUtils.graph_image_url(graphid, graph) %>" width="100%" height="300">
+      <% end %>
+    </div>
+  </div>
+</div>

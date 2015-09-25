@@ -1,0 +1,15 @@
+<% content_for :title do %>
+<%= @hostanme %> - ZV
+<% end %>
+
+<% content_for :navbar_brand do %>
+ZV : <%= @hostanme %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <% @graph_name_by_id.each do |graphid, graph| %>
+      <%= render partial: 'graph_panel', locals: {graphid: graphid, graph: graph} %>
+    <% end %>
+  </div>
+</div>
