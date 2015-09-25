@@ -1,28 +1,36 @@
-== README
+# ZV - Zabbix Gpaph Dashbord
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a dashboard that displays zabbix hosts and graphs.
 
-Things you may want to cover:
+Zabbix screen is not used.
 
-* Ruby version
+# Installation
 
-* System dependencies
+```sh
+bundle install
+cp config/zabbix.yml.sample config/zabbix.yml
+vi config/zabbix.yml
+```
 
-* Configuration
+## zabbix.yml
 
-* Database creation
+```yaml
+endpoint: http://localhost/zabbix/api_jsonrpc.php
+user: Admin
+password: zabbix
+url: http://localhost/zabbix
+```
 
-* Database initialization
+# Start app
 
-* How to run the test suite
+```sh
+bundle exec rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Then please go to `http://localhost:3000`.
 
-* Deployment instructions
+# Screenshot
 
-* ...
+![](https://gyazo.com/b64bf2f741f22304b52f9593d894def1)
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+![](https://gyazo.com/84be6a93ff92440145b9fe4cef85b609)
