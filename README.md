@@ -31,6 +31,10 @@ Then please go to `http://localhost:3000`.
 
 # Screenshot
 
+## Host by hostgroup/template
+
 ![](https://i.gyazo.com/b64bf2f741f22304b52f9593d894def1.png)
+
+## Host graphs
 
 ![](https://i.gyazo.com/84be6a93ff92440145b9fe4cef85b609.png)
