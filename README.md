@@ -27,7 +27,7 @@ url: http://localhost/zabbix
 bundle exec rails s
 ```
 
-Then please go to `http://localhost:3000`.
+Then go to `http://localhost:3000`.
 
 # Screenshot
 
