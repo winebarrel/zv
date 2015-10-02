@@ -1,4 +1,4 @@
-# ZV - Zabbix Gpaph Dashbord
+# ZV - Zabbix Graph Dashbord
 
 This is a dashboard that displays zabbix hosts and graphs.
 
